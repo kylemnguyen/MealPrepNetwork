@@ -3,45 +3,94 @@
     <head> 
         <style>
             body {
+                margin: 0;
                 height: 100vh;
-                background-image: linear-gradient(rgba(240, 248, 255, 0.2), rgba(240, 248, 255, 1));
+                background-color: rgb(236, 236, 236);
             }
             .header {
-                width: 95vw;
-                padding: 20px;
-                text-align: right;
-                background: linear-gradient(to right, rgba(240, 128, 128, 1), rgb(240, 128, 128, 0.75));;
+                position: fixed;
+                width: 100%;
+                max-width: 98vw;
+                padding: 12px 16px;
+                margin: 0 auto;
+                height: 20px;
+                top: 0;
+                left: 0;
+                right: 0;
+                background: rgba(240, 128, 128, 1);
                 color: white;
-                padding-bottom: 5px;
-                border-radius: 15px;
-                display: inline-flex;
                 text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-
+                border-bottom: gray 2px solid;
               }
-            .inline-block {
-                margin: 0px;
+            .header-right {
+                float: right;
             }
-            .logo, .user-action {
-                width: 50vw;
+            .side-bar {
+                position: fixed;
+                height: 100%;
+                width: 100px;
+                top: 44px;
+                left: 0;
+                padding-left: 5px;
+                overflow-x: hidden;
+                background-color: white;
+                border-right: gray 2px solid;
+                border-top: gray 2px solid;
+            }
 
+            .main {
+                margin-left: 100px;
+                padding-top: 75px;
+            }
+            .content {
+                width: 40%;
+                margin: auto;
+                border-radius: 10px;
+                padding: 10px;
+                background: linear-gradient(rgba(181, 229, 255, 0.3), rgba(181, 229, 255, 1));;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); 
+            }
+            .center {
+                text-align: center;
+                
             }
 
         </style>
     </head>
     <body>
+
         <div class="header">
-            <div class="logo">
-                <h1 style="text-align: left">The <br>Meal Prep <br>Network</h1>
+            <a style="font-size: 20px;">The Meal Prep Network</a>
+            <div class="header-right">
+                <a>Search Recipe</a>
+                |
+                <a>Sign Up</a> 
+                |
+                <a>Log In</a>
             </div>
-            <div class="user-action">
-                <p>
-                <p >Sign Up</p>
-                <p>Log in</p>
-                <p>Search Recipe</p>
-                <p>Make Recipe</p>   
-                </p>
+        </div>        
+
+        <div class="side-bar">
+            <p>
+            <hr>
+            <a>My Recipes</a>
+            <hr>
+            <a>Create Recipe</a>
+            <hr>
+            <a>Find Recipe</a>
+            <hr>
+            </p>
+        </div>
+        
+        <div class="main">
+            <div class="content">
+                <h3 class="center">What is The Meal Prep Network?</h3>
+                <p>&emsp; The Meal Prep Network was created to help individuals to build, share, and find healthy and macro-nutrient meals.
             </div>
         </div>
-
+        
+            
+        </div>
+        
     </body>
 </html>
