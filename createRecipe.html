@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <style>
+            .main-body {
+                width: 50%;
+                padding: 5px;
+                background-color: white;
+                border: gray 2px solid;
+                border-radius: 15px;
+                height: auto;
+            }
+            .user-input {
+                width: 50%;
+                text-align: center;
+                border: gray 2px solid;
+                border-radius: 15px;
+            }
+            .slider {
+                width: 80%;
+            }
+            
+        </style>
+    </header>
+    <body>
+        
+        <div class="main-body">
+            <div class="user-input">
+                <h3>Calories</h3>
+                <input id="calories" type="range" min="1" max="2000" value="50" class="slider">
+                <br><h4>Protein</h4>
+                <input id="protein" type="range" min="1" max="2000" value="50" class="slider">
+                <br><h4>Carbohydrates</h4>
+                <input id="carb" type="range" min="1" max="2000" value="50" class="slider">
+                <br><h4>Fat</h4>
+                <input id="fat" type="range" min="1" max="2000" value="50" class="slider">
+            </div>
+            <div class="macros">
+            </div>
+
+        </div>
+
+
+    </body>
+</html>
